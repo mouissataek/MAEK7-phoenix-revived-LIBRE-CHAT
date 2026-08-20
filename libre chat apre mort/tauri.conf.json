@@ -1,0 +1,44 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "bundle": {
+    "active": true,
+    "category": "DeveloperTool",
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png"
+    ],
+    "plugins": {
+      "updater": {
+        "pubkey": "GENERATED_DURING_BUILD",
+        "endpoints": [
+          "https://example.com/update.json"
+        ]
+      }
+    }
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "LibreChat",
+        "width": 1100,
+        "height": 750,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: asset: https://asset.localhost",
+      "dangerousDisableAssetCspModification": false
+    }
+  },
+  "plugins": {
+    "stronghold": {}
+  }
+}

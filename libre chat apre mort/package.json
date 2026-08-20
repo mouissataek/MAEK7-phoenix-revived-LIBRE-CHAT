@@ -1,0 +1,41 @@
+{
+  "name": "LibreChat-phoenix",
+  "version": "2.0.0",
+  "description": "Revived from legacy (Legacy CSS, Legacy JS (CommonJS/var), HTML) via Phoenix Engine - Modern Tauri app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "preview": "vite preview",
+    "heal": "node scripts/heal.js"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "dompurify": "^3.0.6",
+    "@tauri-apps/plugin-updater": "^2.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "vite": "^5.0.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  },
+  "phoenix": {
+    "revivedFrom": [
+      "Legacy CSS",
+      "Legacy JS (CommonJS/var)",
+      "HTML"
+    ],
+    "legacyScore": 55,
+    "revivedAt": "2026-08-15T04:27:56.983Z",
+    "toggles": {
+      "selfHealing": true,
+      "autoEvolution": true,
+      "protection": true
+    },
+    "originalFiles": 4046
+  }
+}
